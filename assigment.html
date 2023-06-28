@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lontties Assignment For a Javascript Internship role"
+    />
+
+    <!-- Gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+
+    <!-- Lontties -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"
+      defer
+    ></script>
+
+    <!-- tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style type="text/taiwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+
+    <!-- Tailwind confiq -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              mainBackGround: '#282C33',
+              textColor: '#FFFFFF',
+              thePink: '#C778DD',
+              thePurple: '#9466FF',
+              theGray: '#ABB2BF',
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Javascript -->
+    <script src="./script.js" defer></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Lottie Assignment</title>
+  </head>
+
+  <body class="bg-mainBackGround text-textColor">
+    <div class="shape-float">
+      <div class="shapes">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <div class="float-social py-10">
+      <div class="float-social-icon bg-mainBackGround flex flex-col gap-2 py-2">
+        <a href="https://github.com/Jamleads" target="_blank"
+          ><img src="./Github.svg" alt="Github"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/adetunji-jacob-3b9973197/"
+          target="_blank"
+          ><img src="./Linkedin.svg" alt="Linkedin"
+        /></a>
+        <a href="https://twitter.com/Adetunjijay" target="_blank"
+          ><img src="./Twitter.svg" alt="Twitter"
+        /></a>
+      </div>
+    </div>
+
+    <div class="lg:px-20 p-3">
+      <nav class="flex items-center justify-between lg:py-5 lg:px-5">
+        <div class="nav-logo flex items-center">
+          <img src="./Github.svg" alt="" />
+          <p class="ml-1 text-bold"><a href="#">JamLeads</a></p>
+        </div>
+      </nav>
+
+      <section class="showcase flex justify-between">
+        <div class="showcase-text lg:w-1/2">
+          <h1 class="lg:text-5xl text-2xl lg:text-center lg:mt-28 mt-14">
+            Adetunji Jacob is a
+            <span class="text-thePurple">Frontend Developer</span> and
+            <span class="text-thePurple">Web Designer</span>
+          </h1>
+
+          <p class="lg:text-lg text-theGray lg:ml-7 mt-10">
+            Working on the assignment given by SSPD Trade Advisory Private
+            Limited for internship role
+          </p>
+          <button class="button border-2 px-5 py-3 ml-20 mt-10">Resume</button>
+        </div>
+
+        <div class="showcase-img pr-5">
+          <div>
+            <div id="animation" class="ml-auto"></div>
+          </div>
+
+          <div
+            class="border-2 border-theGray lg:w-[85%] w-full lg:mx-auto pl-1"
+          >
+            <p class="text-theGray ml-3 lg:text-lg text-xs">
+              Currently working with GSAP to animate
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="gsap-body mt-20">
+      <div class="header bg-thePurple">
+        <div class="links">
+          <div class="link">I want to take an internship role</div>
+          <div class="link">asssesment</div>
+          <div class="link">SSPD Trade Advisory Private Limited</div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="sidebar left"></div>
+        <button class="button button2 border-2 px-5 py-3">
+          Click here to reverse all animation
+        </button>
+        <div class="sidebar right"></div>
+      </div>
+      <div
+        class="footer bg-thePurple text-center flex justify-center items-center"
+      >
+        I am so much ready to learn more, grow more, pay maximum attention to
+        every details and instrction. I look farward to hearing from you.
+      </div>
+    </div>
+  </body>
+</html>
